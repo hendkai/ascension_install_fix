@@ -26,16 +26,15 @@ startup_install()
     printf "${On_Yellow}# ################################################### #${Color_Off}\n"
     printf "${On_Yellow}#${On_Green} Please run as a normal user. We only require        ${On_Yellow}#${Color_Off} \n"
     printf "${On_Yellow}#${On_Green} sudo (root) permission for installing dependencies. ${On_Yellow}#${Color_Off} \n"
-    printf "${On_Yellow}#${On_Red}                 press 'y' to continue               ${On_Yellow}#${Color_Off} \n"
+    # printf "${On_Yellow}#${On_Red}                 press 'y' to continue               ${On_Yellow}#${Color_Off} \n"
     printf "${On_Yellow}#######################################################${Color_Off}\n"
 
-    read -p "Press 'y' to continue: " -n 1 -r
-    echo    # move to a new line
+    # read -n 1 key
 
-    if [[ ! $REPLY =~ ^[Yy]$ ]]; then
-        printf "${On_Red}Cancelling..${Color_Off}\n"
-        exit
-    fi
+    # if [ "$key" != "y" ]; then
+    #     printf "${On_Red}Cancelling..${Color_Off}\n"
+    #     exit
+    # fi
     clear
 }
 
@@ -139,16 +138,15 @@ startup_update()
     printf "${On_Yellow}# ################################################### #${Color_Off}\n"
     printf "${On_Yellow}#${On_Green} Please run as a normal user. We only require        ${On_Yellow}#${Color_Off} \n"
     printf "${On_Yellow}#${On_Green} sudo (root) permission for installing dependencies. ${On_Yellow}#${Color_Off} \n"
-    printf "${On_Yellow}#${On_Red}                 press 'Y' to continue               ${On_Yellow}#${Color_Off} \n"
+    # printf "${On_Yellow}#${On_Red}                 press 'Y' to continue               ${On_Yellow}#${Color_Off} \n"
     printf "${On_Yellow}#######################################################${Color_Off}\n"
 
-    read -p "Press 'Y' to continue: " -n 1 -r
-    echo    # move to a new line
+    # read -n 1 key
 
-    if [[ ! $REPLY =~ ^[Yy]$ ]]; then
-        printf "${On_Red}Cancelling..${Color_Off}\n"
-        exit
-    fi
+    # if [ "$key" != "y" ]; then
+    #     printf "${On_Red}Cancelling..${Color_Off}\n"
+    #     exit
+    # fi
     clear
 }
 
